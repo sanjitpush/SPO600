@@ -21,10 +21,10 @@ loop:
         cmp     x20,0		/*if x20 is equal to 0, jump to skip*/
         beq     skip
         add     x20,x20,'0'
-        strb    w20, [x23,6]
+        strb    w20, [x23,5]
 skip:
         add     x21,x21,'0'
-        strb    w21, [x23,7]
+        strb    w21, [x23,6]
         cmp     x19,max		/*if x19 is equal to max, branch to loop section*/
         bne     loop
 	mov     x0, 0     	/* status -> 0 */
@@ -32,6 +32,6 @@ skip:
 	svc     0          	/* invoke syscall */
  
 .data
-msg: 	.ascii      "Loop: 0\n\n"
+msg: 	.ascii      "Loop: 0\n"
 len= 	. - msg
 
