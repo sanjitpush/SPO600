@@ -33,7 +33,7 @@ int main() {
 	//0b100000000 (which represents 1.00)
 	int shift = 0b100000000 * 0.75;
 
-
+ 
 	// ######################################
 	// This is the interesting part!
 	// Scale the volume of all of the samples
