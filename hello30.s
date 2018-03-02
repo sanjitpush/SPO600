@@ -2,7 +2,7 @@
 .globl _start
 start = 0
 max = 31
-ten = 10
+ten = 10 
 _start:
         mov     x19,start	/*move data from start to x19*/
         mov     x22,ten		/*move ten to x22*/
