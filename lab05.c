@@ -3,7 +3,7 @@
 #include <time.h>
 
 #define MAX 1000
-
+ 
 void main() {
 	int sum = 0;
 	int array1[MAX] __attribute__ ((aligned (16)));
